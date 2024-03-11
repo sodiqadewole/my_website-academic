@@ -35,7 +35,7 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Artificial Intelligence
+    - course: PhD in Systems Engineering
       institution: Stanford University
       year: 2012
     - course: BSc in Mechanical Engineering
