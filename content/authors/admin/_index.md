@@ -70,5 +70,5 @@ email: ''
 highlight_name: true
 ---
 
-Alice Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Sodiq Adewole is a machine learning scientist at Microsoft and an adjunct professor of data science at the University of Virginia School of Data Science. His research interests include Deep Representation Learning, Multi-modal Representation Learning, Reinforcement Learning, Artificial Intelligence, Edge Computing.
 {style="text-align: justify;"}
