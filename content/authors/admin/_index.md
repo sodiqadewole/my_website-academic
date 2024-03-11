@@ -22,12 +22,13 @@ organizations:
     url: https://www.virginia.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include Deep Representation Learning, Multi-modal Representation Learning, Artificial Intelligence, Edge Computing.
+bio: My research interests include Deep Representation Learning, Multi-modal Representation Learning, Reinforcement Learning, Artificial Intelligence, Edge Computing.
 
 # Interests to show in About widget
 interests:
   - Deep Learning
   - Multi-modal Representation Learning
+  - Reinforcement Learning
   - Artificial Intelligence
   - Edge Computing
 
@@ -37,41 +38,38 @@ education:
     - course: PhD in Artificial Intelligence
       institution: Stanford University
       year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+    - course: BSc in Mechanical Engineering
+      institution: University of Ibadan
+      year: 2012
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "/#contact" for contact widget.
 social:
-  - icon: envelope
-    icon_pack: fas
+  #- icon: envelope
+  #  icon_pack: fas
     link: '/#contact'
-  - icon: twitter
-    icon_pack: fab
+  #- icon: twitter
+  #  icon_pack: fab
     link: https://twitter.com/GeorgeCushen
     label: Follow me on Twitter
     display:
       header: true
-  - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
+  #- icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+    link: https://scholar.google.com/citations?user=3v83eq4AAAAJ&hl=en&oi=ao
   - icon: github
     icon_pack: fab
-    link: https://github.com/gcushen
+    link: https://github.com/sodiqadewole
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/
+    link: https://www.linkedin.com/in/sodiq-adewole-phd/
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
-  - icon: cv
-    icon_pack: ai
+  #- icon: cv
+  #  icon_pack: ai
     link: uploads/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
