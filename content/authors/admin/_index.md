@@ -37,7 +37,7 @@ education:
   courses:
     - course: PhD in Systems Engineering
       institution: Stanford University
-      year: 2012
+      year: 2021
     - course: BSc in Mechanical Engineering
       institution: University of Ibadan
       year: 2012
