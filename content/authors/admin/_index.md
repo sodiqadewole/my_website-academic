@@ -1,10 +1,10 @@
 ---
 # Display name
-title: Alice Wu 吳恩達
+title: Sodiq Adewole
 
 # Full name (for SEO)
-first_name: Alice
-last_name: Wu
+first_name: Sodiq
+last_name: Adewole
 
 # Status emoji
 status:
@@ -14,21 +14,22 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Professor of Artificial Intelligence
+role: Machine Learning Scientist and Adjunct Professor of Data Science
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Stanford University
-    url: https://www.stanford.edu/
+  - name: University of Virginia
+    url: https://www.virginia.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include Deep Representation Learning, Multi-modal Representation Learning, Artificial Intelligence, Edge Computing.
 
 # Interests to show in About widget
 interests:
+  - Deep Learning
+  - Multi-modal Representation Learning
   - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Edge Computing
 
 # Education to show in About widget
 education:
