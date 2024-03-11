@@ -70,5 +70,5 @@ email: ''
 highlight_name: true
 ---
 
-Sodiq Adewole is a machine learning scientist at Microsoft and an adjunct professor of data science at the University of Virginia School of Data Science. His research interests include Deep Representation Learning, Multi-modal Representation Learning, Reinforcement Learning, Artificial Intelligence, Edge Computing.
+Dr. Adewole is a machine learning scientist at Microsoft and an adjunct professor of data science at the University of Virginia School of Data Science. His research interests include Deep Representation Learning, Multi-modal Representation Learning, Reinforcement Learning, Artificial Intelligence, Edge Computing.
 {style="text-align: justify;"}
