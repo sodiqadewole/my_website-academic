@@ -36,7 +36,7 @@ interests:
 education:
   courses:
     - course: PhD in Systems Engineering
-      institution: Stanford University
+      institution: University of Virginia
       year: 2021
     - course: BSc in Mechanical Engineering
       institution: University of Ibadan
