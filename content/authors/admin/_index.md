@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Sodiq Adewole
+title: Sodiq Adewole PhD
 
 # Full name (for SEO)
 first_name: Sodiq
@@ -14,23 +14,24 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Machine Learning Scientist and Adjunct Professor of Data Science
+role: ML Scientist and Adjunct Professor of Data Science
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: University of Virginia
+  - name: Microsoft / University of Virginia
     url: https://www.virginia.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include Deep Representation Learning, Multi-modal Representation Learning, Reinforcement Learning, Artificial Intelligence, Edge Computing.
+bio: My research interests include Deep Representation Learning, Multi-Modal Deep Learning, Computer Vision, Natural Language Processing, Deep Reinforcement Learning.
 
 # Interests to show in About widget
 interests:
-  - Deep Learning
-  - Multi-modal Representation Learning
-  - Reinforcement Learning
-  - Artificial Intelligence
-  - Edge Computing
+  - Deep Representation Learning, 
+  - Multi-Modal Deep Learning,
+  - Computer Vision
+  - Natural Language Processing, 
+  - Deep Reinforcement Learning
+  - General Artificial Intelligence and Edge Computing.
 
 # Education to show in About widget
 education:
@@ -47,21 +48,32 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "/#contact" for contact widget.
 social:
+  - icon: envelope
+    icon_pack: fas
+    link: '/#contact'
+  # - icon: twitter
+  #   icon_pack: fab
+  #   link: https://twitter.com/GeorgeCushen
+  #   label: Follow me on Twitter
+  #   display:
+  #     header: true
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
+    link: https://scholar.google.com/citations?user=3v83eq4AAAAJ&hl=en&oi=ao
     link: https://scholar.google.com/citations?user=3v83eq4AAAAJ&hl=en&oi=ao
   - icon: github
     icon_pack: fab
     link: https://github.com/sodiqadewole
+    link: https://github.com/sodiqadewole
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/sodiq-adewole-phd/
-   # Link to a PDF of your resume/CV.
-   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
-   # and uncomment the lines below.
-  - icon: cv
-    icon_pack: ai
-    link: uploads/resume.pdf
+  # Link to a PDF of your resume/CV.
+  # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
+  # and uncomment the lines below.
+  # - icon: cv
+  #   icon_pack: ai
+  #   link: uploads/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ''
@@ -70,5 +82,5 @@ email: ''
 highlight_name: true
 ---
 
-Dr. Adewole is a machine learning scientist at Microsoft and an adjunct professor of data science at the University of Virginia School of Data Science. His research interests include Deep Representation Learning, Multi-modal Representation Learning, Reinforcement Learning, Artificial Intelligence, Edge Computing.
+Dr. Adewole is a machine learning scientist at Microsoft and an adjunct professor of data science at the University of Virginia School of Data Science. His research interests include Deep Representation Learning, Multi-modal Representation Learning, Reinforcement Learning, Artificial Intelligence and Edge Computing
 {style="text-align: justify;"}
