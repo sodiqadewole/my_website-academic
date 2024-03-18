@@ -55,7 +55,6 @@ In Jupter, choose _Markdown_ as the type of the first cell and wrap your Academi
 ---
 title: Multilabel Text Classification Using Tensorflow
 date: 2024-03-18
-type: _Markdown_
 
 # Put any other Academic metadata here...
 ---
