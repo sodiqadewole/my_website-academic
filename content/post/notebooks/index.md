@@ -40,7 +40,7 @@ Run the following commands in your Terminal, substituting `<MY-WEBSITE-FOLDER>` 
 ```bash
 mkdir -p <MY-WEBSITE-FOLDER>/content/post/<SHORT-POST-TITLE>/
 cd <MY-WEBSITE-FOLDER>/content/post/<SHORT-POST-TITLE>/
-jupyter lab index.ipynb
+jupyter lab multilabel_text_classification.ipynb
 ```
 
 The `jupyter` command above will launch the JupyterLab editor, allowing us to add Academic metadata and write the content.
