@@ -1,14 +1,14 @@
 ---
-title: Display Jupyter Notebooks with Academic
-subtitle: Learn how to blog in Academic using Jupyter notebooks
-summary: Learn how to blog in Academic using Jupyter notebooks
+title: Multilabel Text Classification in Tensorflow
+subtitle: Tutorial on Multilabel Text Classification in Tensorflow
+summary: Tutorial on Multilabel Text Classification in Tensorflow
 authors:
   - admin
 tags: []
 categories: []
 projects: []
-date: '2019-02-05T00:00:00Z'
-lastMod: '2019-09-05T00:00:00Z'
+date: '2023-09-05T00:00:00Z'
+lastMod: '2024-03-18T00:00:00Z'
 image:
   caption: ''
   focal_point: ''
@@ -22,10 +22,10 @@ Image('https://www.python.org/static/community_logos/python-logo-master-v3-TM-fl
 ![png](./index_1_0.png)
 
 ```python
-print("Welcome to Academic!")
+print("Multilabel Text Classification!")
 ```
 
-    Welcome to Academic!
+    Multilabel Text Classification in Tensorflow!
 
 ## Install Python and JupyterLab
 
