@@ -68,7 +68,7 @@ sections:
           description: 100%
           icon: Deep Learning
           icon_pack: fab
-        - name: Natural Language Processing
+        - name: Natural Language Understanding
           description: 100%
           icon: Computer Vision
           icon_pack: fab
