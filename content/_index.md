@@ -243,7 +243,7 @@ sections:
       # Contact (add or remove contact options as necessary)
       email: email@example.org
       phone: 000 111 22 33
-      appointment_url: 'https://calendly.com'
+      # appointment_url: 'https://calendly.com'
       address:
         street: Dell 1
         city: Univeristy of Virginia
@@ -254,7 +254,6 @@ sections:
       directions: Dell Building 1
       office_hours:
         - 'Fridays 17:30:00 to 18:30:00'
-        - 'Wednesday 09:00 to 10:00'
       contact_links:
         # - icon: twitter
         #   icon_pack: fab
