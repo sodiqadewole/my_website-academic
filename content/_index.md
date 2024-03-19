@@ -60,10 +60,18 @@ sections:
         - name: C#
           description: 90%
           icon: C#
-        - name: Statistical Learning
+        - name: Statistical Machine Learning
           description: 100%
-          icon: Statistical Learning
-          icon_pack: fas
+          icon: Statistical Machine Learning
+          icon_pack: fab
+        - name: Deep Learning
+          description: 100%
+          icon: Deep Learning
+          icon_pack: fab
+        - name: Natural Language Processing
+          description: 100%
+          icon: Computer Vision
+          icon_pack: fab
   - block: experience
     content:
       title: Experience
