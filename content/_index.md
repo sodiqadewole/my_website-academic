@@ -52,17 +52,17 @@ sections:
         - name: Pytorch
           description: 100%
           icon: torch
-          icon_pack: fas
+          icon_pack: fab
         - name: Tensorflow
           description: 100%
           icon: tensorflow
-          icon_pack: fas
+          icon_pack: fab
         - name: C#
           description: 90%
           icon: C#
-        - name: Machine Learning
+        - name: Statistical Learning
           description: 100%
-          icon: #camera-retro
+          icon: Statistical Learning
           icon_pack: fas
   - block: experience
     content:
