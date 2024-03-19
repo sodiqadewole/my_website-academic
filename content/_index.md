@@ -47,20 +47,19 @@ sections:
       items:
         - name: Python
           description: 100%
-          icon: # r-project
+          icon: python
           icon_pack: fab
         - name: Pytorch
           description: 100%
-          icon: #chart-line
+          icon: torch
           icon_pack: fas
         - name: Tensorflow
           description: 100%
-          icon: #camera-retro
+          icon: tensorflow
           icon_pack: fas
         - name: C#
           description: 90%
-          icon: #camera-retro
-          icon_pack: fas
+          icon: C#
         - name: Machine Learning
           description: 100%
           icon: #camera-retro
