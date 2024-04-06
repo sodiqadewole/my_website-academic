@@ -3,12 +3,10 @@ title: Text Classification in Tensorflow
 date: 2024-03-18
 summary: Movie Review Sentiment classification using Tensorflow
 ---
-```python
 
-# %% [markdown]
 # In this tutorial, we demonstrate a text classification model from raw text from scratch based on the IMDB sentiment classification dataset.
 
-# %%
+```python
 import os
 os.environ["KERAS_BACKEND"] = "tensorflow"
 
@@ -17,11 +15,12 @@ import tensorflow as tf
 import numpy as np
 from keras import layers
 
-# %% [markdown]
+```
+
 # ##### Load Dataset
 # The dataset folder contains a train and test subfolder
 
-# %%
+```python
 !curl -O https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
 !tar -xf aclImdb_v1.tar.gz
 
