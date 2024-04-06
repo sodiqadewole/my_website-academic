@@ -67,6 +67,7 @@ print(f"Number of batches in train dataset: {raw_train_ds.cardinality()}")
 print(f"Number of batches in validation dataset: {raw_val_ds.cardinality()}")
 print(f"Number of batches in test dataset: {raw_test_ds.cardinality()}")
 ```
+
 Let's preview few samples of the data to ensure normalization and tokenization will work as expected. We use eager execution by evaluating the tensors using numpy().
 
 ```python
@@ -78,13 +79,14 @@ for text_batch, label_batch in raw_train_ds.take(1):
 
 Lets Prepare the data
 
+We create a custom standardization to handle the HTML break tags '<br />' since this cannot be removed by derault standardizer.
+
 ```python
 import string
 import re
 import tensorflow as tf
 from tensorflow.keras import layers
 
-# We create a custom standardization to handle the HTML break tags '<br />' since this cannot be removed by derault standardizer.
 def custom_standardization(input_data):
     """
     - change to lower case
@@ -123,7 +125,6 @@ text_input = keras.Input(shape=(1,), dtype=tf.string, name='text')
 x = vectorizer_layer(text_input)
 x = layers.Embedding(max_features+1, embedding_dim)(x)
 
-# %%
 # Apply the vectorization layer to the raw dataset
 def vectorize_text(text, label):
     text = tf.expand_dims(text, -1)
@@ -136,16 +137,19 @@ print("Review", first_review)
 print("Label", raw_train_ds.class_names[first_label])
 print("Vectorized review", vectorize_text(first_review, first_label))
 
-# %% [markdown]
-# We can look up the token (string) that each integer corresponds to by calling .get_vocabulary() on the layer
+```
 
-# %%
+We can look up the token (string) that each integer corresponds to by calling .get_vocabulary() on the layer
+
+```python
 print("1627 ---> ", vectorizer_layer.get_vocabulary()[1627])
 print("313 ---> ", vectorizer_layer.get_vocabulary()[313])
 print("Vocabulary ---> {}".format(len(vectorizer_layer.get_vocabulary())))
+```
 
-# %%
-# Apply to dataset
+Apply to dataset
+
+```python
 train_ds = raw_train_ds.map(vectorize_text)
 val_ds = raw_val_ds.map(vectorize_text)
 test_ds = raw_test_ds.map(vectorize_text)
@@ -162,11 +166,11 @@ which is more efficient to read than many small files.
 train_ds = train_ds.cache().prefetch(buffer_size=10)
 val_ds = val_ds.cache().prefetch(buffer_size=10)
 test_ds = test_ds.cache().prefetch(buffer_size=10)
+```
 
-# %% [markdown]
-# #### Build and Train model
+Build and Train model
 
-# %%
+```python
 from tensorflow.keras import losses, layers
 
 embedding_dim = 16
@@ -188,14 +192,19 @@ epochs = 10
 history = model_2.fit(train_ds,
                       validation_data=val_ds,
                       epochs=epochs)
+```
 
-# Evaluate the model
+Evaluate the model
+
+```python
 loss, accuracy = model_2.evaluate(test_ds)
 print("Loss: ", loss)
 print("Accuracy: ", accuracy)
+```
 
-# %%
-# To visualize the training history
+To visualize the training history
+
+```python
 history_dict = history.history
 acc = history_dict["binary_accuracy"]
 val_acc = history_dict["val_binary_accuracy"]
@@ -217,7 +226,6 @@ plt.legend()
 
 plt.show()
 
-# %%
 plt.plot(epochs, acc, 'bo', label='Training acc')
 plt.plot(epochs, val_acc, 'b', label='Validation acc')
 plt.title('Training and validation accuracy')
@@ -226,11 +234,11 @@ plt.ylabel('Accuracy')
 plt.legend(loc='lower right')
 
 plt.show()
+```
 
-# %% [markdown]
-# #### Make an end-to-end model to export for inference on raw strings
+Make an end-to-end model to export for inference on raw strings
 
-# %%
+```python
 export_model = tf.keras.Sequential([
     vectorizer_layer,
     model_2,
@@ -243,17 +251,15 @@ export_model.compile(loss=losses.BinaryCrossentropy(from_logits=False),
 
 loss, accuracy = export_model.evaluate(raw_test_ds)
 print(accuracy)
+```
 
-# %% [markdown]
-# #### Inference on new examples
+Inference on new examples
 
-# %%
+```python
 examples = tf.constant([
     "The movie was great",
     "The movie was okay.",
     "The movie was awful."
 ])
-
 export_model.predict(examples)
-
 ```
