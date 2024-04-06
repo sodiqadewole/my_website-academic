@@ -4,7 +4,7 @@ date: 2024-03-18
 summary: Movie Review Sentiment classification using Tensorflow
 ---
 
-# In this tutorial, we demonstrate a text classification model from raw text from scratch based on the IMDB sentiment classification dataset.
+In this tutorial, we demonstrate a text classification model from raw text from scratch based on the IMDB sentiment classification dataset.
 
 ```python
 import os
@@ -14,37 +14,31 @@ import keras
 import tensorflow as tf
 import numpy as np
 from keras import layers
-
 ```
 
-# ##### Load Dataset
-# The dataset folder contains a train and test subfolder
+Load Dataset
+The dataset folder contains a train and test subfolder
 
 ```python
 !curl -O https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
 !tar -xf aclImdb_v1.tar.gz
 
-# %%
 !dir aclImdb
 
-# %%
 ## Chec content of the test directory
 !dir aclImdb\test
 
-# %%
 ## Chec content of the train directory
 !dir aclImdb\train
 
-# %% [markdown]
 # The train and test folders contains pos and negative subfolders for the positive and negative reviews. Lets see an example positive review from the train folder.
 
-# %%
 !type aclImdb\train\pos\6248_7.txt
+```
 
-# %% [markdown]
-# Now we can use keras.utils.text_dataset_from_directory to generate a labeled tf.data.dataset object from a set of text files on disk filed into class-specific folders. We will use this to generate the training, validation dataset from the train directory using 80:20 split. We will use the test directory to generate the test dataset. 
+Now we can use keras.utils.text_dataset_from_directory to generate a labeled tf.data.dataset object from a set of text files on disk filed into class-specific folders. We will use this to generate the training, validation dataset from the train directory using 80:20 split. We will use the test directory to generate the test dataset. 
 
-# %%
+```python
 import keras
 
 batch_size = 32
@@ -72,20 +66,19 @@ raw_test_ds = keras.utils.text_dataset_from_directory(
 print(f"Number of batches in train dataset: {raw_train_ds.cardinality()}")
 print(f"Number of batches in validation dataset: {raw_val_ds.cardinality()}")
 print(f"Number of batches in test dataset: {raw_test_ds.cardinality()}")
+```
+Let's preview few samples of the data to ensure normalization and tokenization will work as expected. We use eager execution by evaluating the tensors using numpy().
 
-# %% [markdown]
-# Let's preview few samples of the data to ensure normalization and tokenization will work as expected. We use eager execution by evaluating the tensors using numpy().
-
-# %%
+```python
 for text_batch, label_batch in raw_train_ds.take(1):
     for i in range(2):
         print(f"Text: {text_batch.numpy()[i]}")
         print(f"Label: {label_batch.numpy()[i]}")
+```
 
-# %% [markdown]
-# Lets Prepare the data
+Lets Prepare the data
 
-# %%
+```python
 import string
 import re
 import tensorflow as tf
