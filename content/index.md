@@ -255,8 +255,8 @@ sections:
       # text: |-
       #   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
       # Contact (add or remove contact options as necessary)
-      email: email@example.org
-      phone: 000 111 22 33
+      email: adewolesodiq@gmail.com
+      phone: +1 347 514 5075
       # appointment_url: 'https://calendly.com'
       address:
         street: Dell 1
