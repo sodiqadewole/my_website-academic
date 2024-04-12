@@ -1,3 +1,19 @@
+---
+title: Tutorial on Building and Training Large Language Model from Scratch
+subtitle: Tutorial on Building and Training Large Language Model from Scratch
+summary: Tutorial on Building and Training Large Language Model from Scratch
+authors:
+  - admin
+tags: []
+categories: []
+projects: []
+date: '2024-04-12T00:00:00Z'
+lastMod: '2024-04-12T00:00:00Z'
+image:
+  caption: ''
+  focal_point: ''
+---
+
 ### Part I: Data Preparation and Preprocessing
 
 In this section we cover the data preparation and sampling to get our input data ready for the LLM. You can download our sample data from here: https://en.wikisource.org/wiki/The_Verdict
