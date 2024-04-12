@@ -6,7 +6,6 @@ tags:
 date: '2024-04-07T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
-# external_link: 'https://colab.research.google.com/drive/1G-atL1tgR6aM61AmuQr_1D4ZdlvcgAbZ?usp=sharing'
 
 image:
   # caption: Photo by rawpixel on Unsplash
